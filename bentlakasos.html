@@ -108,10 +108,95 @@
             </div>
           </div>
 
-          <div class="sidebar-cta">
-            <h3>Jelentkezzen most!</h3>
-            <p>Foglaljon időpontot online!</p>
-            <a href="kapcsolat.html" class="btn btn-primary" style="width:100%;justify-content:center;">Foglalás</a>
+          <div class="booking-widget">
+            <div class="booking-widget-header">
+              <h3>📅 Bentlakásos képzés foglalás</h3>
+              <p>Válasszon időpontot az alábbi naptárból</p>
+            </div>
+            <div class="booking-calendar">
+              <div class="booking-cal-nav">
+                <button>&#8249;</button>
+                <span class="booking-cal-month">2025. április</span>
+                <button>&#8250;</button>
+              </div>
+              <div class="booking-cal-grid">
+                <span class="booking-cal-day-label">H</span>
+                <span class="booking-cal-day-label">K</span>
+                <span class="booking-cal-day-label">Sze</span>
+                <span class="booking-cal-day-label">Cs</span>
+                <span class="booking-cal-day-label">P</span>
+                <span class="booking-cal-day-label">Szo</span>
+                <span class="booking-cal-day-label">V</span>
+                <span class="booking-cal-day empty"></span>
+                <span class="booking-cal-day past">1</span>
+                <span class="booking-cal-day past">2</span>
+                <span class="booking-cal-day past">3</span>
+                <span class="booking-cal-day past">4</span>
+                <span class="booking-cal-day past">5</span>
+                <span class="booking-cal-day past">6</span>
+                <span class="booking-cal-day past">7</span>
+                <span class="booking-cal-day past">8</span>
+                <span class="booking-cal-day past">9</span>
+                <span class="booking-cal-day past">10</span>
+                <span class="booking-cal-day past">11</span>
+                <span class="booking-cal-day past">12</span>
+                <span class="booking-cal-day past">13</span>
+                <span class="booking-cal-day past">14</span>
+                <span class="booking-cal-day past">15</span>
+                <span class="booking-cal-day past">16</span>
+                <span class="booking-cal-day past">17</span>
+                <span class="booking-cal-day past">18</span>
+                <span class="booking-cal-day today">19</span>
+                <span class="booking-cal-day available selected">20</span>
+                <span class="booking-cal-day available">21</span>
+                <span class="booking-cal-day available">22</span>
+                <span class="booking-cal-day available">23</span>
+                <span class="booking-cal-day available">24</span>
+                <span class="booking-cal-day available">25</span>
+                <span class="booking-cal-day available">26</span>
+                <span class="booking-cal-day available">27</span>
+                <span class="booking-cal-day available">28</span>
+                <span class="booking-cal-day available">29</span>
+                <span class="booking-cal-day available">30</span>
+              </div>
+            </div>
+            <div class="booking-timeslots">
+              <div class="booking-timeslots-label">Elérhető időpontok - Ápr. 20.</div>
+              <div class="booking-timeslot-grid">
+                <div class="booking-timeslot selected">09:00<span class="slot-spots">Szabad kennel</span></div>
+                <div class="booking-timeslot">10:00<span class="slot-spots">Szabad kennel</span></div>
+                <div class="booking-timeslot full">14:00<span class="slot-spots">Nincs hely</span></div>
+              </div>
+            </div>
+            <div class="booking-form-section">
+              <div class="booking-summary">
+                <div class="booking-summary-row">
+                  <span class="label">Szolgáltatás</span>
+                  <span class="value">Bentlakásos képzés</span>
+                </div>
+                <div class="booking-summary-row">
+                  <span class="label">Időpont</span>
+                  <span class="value">2025. ápr. 20. (vasárnap) 09:00</span>
+                </div>
+                <div class="booking-summary-row">
+                  <span class="label">Ár</span>
+                  <span class="value">10 000 Ft / alkalom</span>
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Az Ön neve</label>
+                <input type="text" placeholder="pl. Kiss János">
+              </div>
+              <div class="form-group">
+                <label>Telefonszám</label>
+                <input type="tel" placeholder="pl. 0630/123-4567">
+              </div>
+              <div class="form-group">
+                <label>Kutya neve</label>
+                <input type="text" placeholder="pl. Bodri">
+              </div>
+              <button class="booking-submit">Foglalás megerősítése</button>
+            </div>
           </div>
         </div>
 
@@ -123,9 +208,9 @@
   <section class="cta-section">
     <div class="container">
       <h2>Készen áll az első lépésre?</h2>
-      <p>Vegye fel velünk a kapcsolatot, és segítünk kiválasztani a kutyája számára legmegfelelőbb képzést!</p>
+      <p>Válasszon időpontot fentebb a naptárból, vagy lépjen velünk kapcsolatba!</p>
       <div class="cta-buttons">
-        <a href="kapcsolat.html" class="btn btn-white">Foglalás</a>
+        <a href="#" class="btn btn-white" onclick="document.querySelector('.booking-widget').scrollIntoView({behavior:'smooth'});return false;">Foglalás a naptárból</a>
       </div>
     </div>
   </section>
